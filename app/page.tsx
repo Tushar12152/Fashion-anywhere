@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Banner, Container } from '@/components';
+import { Dotdash } from "@/components/Dotdash";
+import { FashionCategory } from "@/components/FashionCategory";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <div>
          <Container>
              <Banner/>
+             <Dotdash/>
+             <FashionCategory/>
           </Container>
       </div>
     </>
