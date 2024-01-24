@@ -1,4 +1,5 @@
 import { Category } from "./CAtegory"
+import { Latest } from "./Latest"
 import { WorkWare } from "./Workware"
 
 export const FashionCategory=()=>{
@@ -33,6 +34,73 @@ export const FashionCategory=()=>{
         },
     ]
 
+    const latest=[
+        {
+            _id:1,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:2,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:3,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:4,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:5,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:6,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:7,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+        {
+            _id:8,
+            heading:'Gift guids',
+            time:'4 Hours',
+            image:'https://i.ibb.co/Tgrsv10/012324-bodysuit-Lead-e4f2bac6eb0f42e58ffc5317b14572b8.webp',
+            title:'I can go breasly in this valentine bla bla bla..',
+            date: 'By ruby lc django',
+        },
+    ]
+
 
      return (
         <div>  
@@ -52,11 +120,24 @@ export const FashionCategory=()=>{
              <div className='col-span-2'>
              <div className="border-t-2 mb-1 w-full border-black"></div>
              <div className=" border-b-2 w-full border-black"></div>
-               <div>
+               <div className='mt-4'>
                   <WorkWare/>
                </div>
              </div>
-             <div className=''>2</div>
+             <div className=''>
+
+             <div className="border-t-2 mb-1 w-full border-black"></div>
+             <div className=" border-b-2 w-full border-black"></div>
+
+             <h1 className='text-4xl pt-4'>THE LATEST</h1>
+
+             <div>
+                {
+                    latest.map(item=><Latest key={item._id} latest={item}/>)
+                }
+             </div>
+
+             </div>
          </div>
         </div>
      )
