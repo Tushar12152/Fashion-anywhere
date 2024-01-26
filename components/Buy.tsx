@@ -51,12 +51,13 @@ export const Buy=()=>{
                          <p className="font-bold text-md text-gray-600 p-2  ">{item?.date}</p>
                     </div>
 
-                    <div className=" border-b-2 w-full border-black mt-10"></div>
+                 
 
                   
                   </div>)
                 }
             </div>
+            <div className=" border-b-2 w-full border-black mt-10"></div>
             <h1 className='text-center font-bold py-4 mb-12 text-3xl cursor-pointer hover:underline'>See More Shopping</h1>
             
         </div>

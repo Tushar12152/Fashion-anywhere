@@ -5,6 +5,7 @@ import { FashionCategory } from "@/components/FashionCategory";
 import { Celebration } from "@/components/Celebration";
 import { Fashion } from "@/components/Fashion";
 import { Buy } from './../components/Buy';
+import { Trending } from "@/components/Trending";
 
 export default function Home() {
   return (
@@ -28,6 +29,10 @@ export default function Home() {
              <div className=" border-b-2 w-full border-black"></div>
 
              <Buy/>
+
+             <div className="border-t-2 mb-1 w-full mt-20 border-black"></div>
+             <div className=" border-b-2 w-full border-black"></div>
+             <Trending/>
 
           </Container>
 
