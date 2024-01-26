@@ -1,3 +1,5 @@
+import { Dotdash } from "./Dotdash"
+
 export const Trending=()=>{
     const celibraties=[
         {
@@ -49,6 +51,10 @@ export const Trending=()=>{
                 </div>) 
             }
           </div>
+
+       <div className='my-10'>
+           <Dotdash/>
+       </div>
 
     </div>
     )

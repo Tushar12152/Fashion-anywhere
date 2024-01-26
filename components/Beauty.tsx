@@ -1,7 +1,7 @@
-import { Dotdash } from "./Dotdash"
 
-export const Fashion=()=>{
-  const fashions=[
+
+export const Beauty=()=>{
+  const Items=[
     {
         _id:1,
         heading:'Fashion',
@@ -14,7 +14,7 @@ export const Fashion=()=>{
         _id:2,
         heading:'Fashion',
     
-        image:'https://i.ibb.co/QvkKgjd/instyle-naomi-osaka-004-4350d83a18674fa6afc6e72b9f67e2ec.webp',
+        image:'https://i.ibb.co/FXZQFFf/EXCLUSIVEcopy-5aefb55496a04619b3bcee05a247599e.webp',
         title:'advantage Nimai',
         date: 'By Python with django',
     },
@@ -31,11 +31,11 @@ export const Fashion=()=>{
 ]
       return(
         <div>
-            <h1 className='font-bold text-2xl text-center py-10 hover:underline'>Fashion <span  className='font-bold text-2xl '>→</span></h1> 
+            <h1 className='font-bold text-2xl text-center py-10 hover:underline'>Beauty <span  className='font-bold text-2xl '>→</span></h1> 
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3'>
                 {
-                  fashions.map(item=> <div key={item._id}>
+                  Items.map(item=> <div key={item._id}>
                     <div className="shadow-xl">
                          <img className='w-96 h-60 p-2'  src={item.image} alt='img'/>
                            <h2 className="text-xl p-2 font-bold text-red-500 ">{item?.  heading}</h2>
@@ -50,8 +50,8 @@ export const Fashion=()=>{
                 }
             </div>
             <div className=" border-b-2 w-full border-black mt-10"></div>
-            <h1 className='text-center font-bold py-4 mb-12 text-3xl cursor-pointer hover:underline'>See All Fashion</h1>
-             <Dotdash/>
+            <h1 className='text-center font-bold py-4 mb-12 text-3xl cursor-pointer hover:underline'>See All Beauty</h1>
+             
         </div>
       )
 }

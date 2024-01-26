@@ -6,6 +6,7 @@ import { Celebration } from "@/components/Celebration";
 import { Fashion } from "@/components/Fashion";
 import { Buy } from './../components/Buy';
 import { Trending } from "@/components/Trending";
+import { Beauty } from './../components/Beauty';
 
 export default function Home() {
   return (
@@ -34,6 +35,10 @@ export default function Home() {
              <div className=" border-b-2 w-full border-black"></div>
              <Trending/>
 
+
+             <div className="border-t-2 mb-1 w-full mt-20 border-black"></div>
+             <div className=" border-b-2 w-full border-black"></div>
+             <Beauty/>
           </Container>
 
 
